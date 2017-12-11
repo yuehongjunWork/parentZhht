@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- dao接口层与mybatis关联 -->
+<mapper namespace="cn.com.core.dao.CarTbDao">
+	<!--  添加测试数据  -->
+	<!-- 在mybatis-config.xml配置了别名路径，否则parameterType="cn.itcast.core.bean.TestTb" -->
+	<insert id="insertCarTb" parameterType="CarTb">
+		insert into Car_Tb
+		(name,password)
+		values
+		(#{name},#{password})
+	</insert>
+	<insert id="insertCarTb2" parameterType="CarTb">
+		insert into Car_Tb
+		(name,password)
+		values
+		(#{name},#{password})
+	</insert>
+</mapper>
