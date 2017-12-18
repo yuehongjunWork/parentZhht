@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import cn.com.core.bean.CarTb;
-import cn.com.core.bean.MoneyTb;
 import cn.com.core.bean.TestTb;
 import cn.com.core.dao.TestTbDao;
 
@@ -38,7 +36,7 @@ public class TestTbServiceImpl implements TestTbService{
 	
 	
 //	@Transactional(propagation = Propagation.REQUIRES_NEW)
-	public void insertTestTb(TestTb testTb){
+	public void addTestTb(TestTb testTb){
 		try{			
 			Date currentDate = new Date();
 			System.out.println("TestTbService1" + currentDate);
@@ -67,7 +65,7 @@ public class TestTbServiceImpl implements TestTbService{
 			//testTb=null;
 			/*testTb.setName("2name");
 			testTb.setPassword("2password");*/
-			testTbDao.insertTestTb(testTb);			
+			testTbDao.addTestTb(testTb);			
 		}catch(Exception e){
 			throw new RuntimeException();
 		}

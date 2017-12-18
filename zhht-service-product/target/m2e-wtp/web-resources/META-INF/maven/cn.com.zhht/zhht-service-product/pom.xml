@@ -22,10 +22,5 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<artifactId>zhht-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>cn.com.zhht</groupId>
-			<artifactId>zhht-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 </project>

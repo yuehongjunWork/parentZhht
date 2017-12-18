@@ -21,8 +21,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<artifactId>zhht-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- <dependency> <groupId>cn.com.zhht</groupId> <artifactId>zhht-interface</artifactId> 
-			<version>0.0.1-SNAPSHOT</version> </dependency> -->
 		<!-- Tomcat7 servlet-api -->
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>

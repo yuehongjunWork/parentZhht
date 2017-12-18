@@ -10,14 +10,17 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   </parent>
   <artifactId>zhht-common</artifactId>
 
-
-  
    <!-- 依赖管理之后台 -->
 	<dependencies>
 		<!-- with junit4.12 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.qpid/proton-jms -->
+		<dependency>
+		    <groupId>org.apache.qpid</groupId>
+		    <artifactId>proton-jms</artifactId>
 		</dependency>
 		<!-- Spring -->
 		<dependency>
@@ -152,6 +155,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<artifactId>json</artifactId>
 		</dependency>
 
+		<!--page -->
+		<dependency>
+			<groupId>com.babasport</groupId>
+			<artifactId>page</artifactId>
+		</dependency>
+		
 		<!-- solrJ -->
 		<dependency>
 			<groupId>org.apache.solr</groupId>
@@ -171,6 +180,11 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         </dependency>
 
 		<!-- FastDFS client -->
+		<dependency>
+			<groupId>fastdfs_client</groupId>
+			<artifactId>fastdfs_client</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.jboss.netty</groupId>
 			<artifactId>netty</artifactId>
@@ -203,20 +217,20 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<artifactId>zkclient</artifactId>
 		</dependency>
 		<!-- mybatis的分页插�? -->
-        <dependency>
+        <!-- <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-        </dependency>
+        </dependency> -->
 		<!-- Zookeeper 用于分布式服务管理 end -->
 		<!-- Active MQ 开始 -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-all</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-pool</artifactId>
-		</dependency> -->
+		</dependency>
 		<!-- Active MQ 结束 -->
 		<!-- Tomcat7 servlet-api -->
 	   <dependency>

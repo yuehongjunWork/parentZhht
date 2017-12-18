@@ -2,6 +2,7 @@ package cn.com.core.controller;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -59,8 +60,8 @@ public class LoginController {
 		}else{
 			try {
 				testTb.setName(username);
-				testTb.setPassword(password);
-				testTbService.insertTestTb(testTb);
+				testTb.setBirthday(new Date());
+				testTbService.addTestTb(testTb);
 				System.out.println("注册成功");
 				message = "注册成功";
 				model.addAttribute("message", message);

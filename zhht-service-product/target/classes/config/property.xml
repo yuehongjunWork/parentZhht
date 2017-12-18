@@ -16,19 +16,19 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/task
-		http://www.springframework.org/schema/task/spring-task-4.0.xsd
+   		http://www.springframework.org/schema/task/spring-task-4.0.xsd
 		http://code.alibabatech.com/schema/dubbo        
 		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 		
-		<!-- 读取多个properties -->
-		<!-- <context:property-placeholder location="classpath:jdbc.properties"/>  -->
-		<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-			<property name="locations">
-				<list>
-					<value>classpath:jdbc.properties</value>
-					<value>classpath:redisCluster.properties</value>
-				</list>
-			</property>
-		</bean>
+	<!-- 读取 多个properties -->
+<!-- 	<context:property-placeholder location="classpath:jdbc.properties"/> -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+		
 		
 </beans>

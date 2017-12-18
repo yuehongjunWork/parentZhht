@@ -1,5 +1,0 @@
-cn\com\common\convertion\CustomConverter.class
-cn\com\common\utils\RequestUtils.class
-cn\com\common\fdfs\FastDFSUtils.class
-cn\com\common\redis\RedisClusterUtils.class
-cn\com\common\web\Constants.class

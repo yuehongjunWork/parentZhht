@@ -7,4 +7,25 @@
   </parent>
   <artifactId>zhht-console</artifactId>
   <packaging>war</packaging>
+  
+  <dependencies>		
+		<dependency>
+			<groupId>cn.com.zhht</groupId>
+			<artifactId>zhht-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.com.zhht</groupId>
+			<artifactId>zhht-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- Tomcat7 servlet-api -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jsp-api</artifactId>
+			<version>7.0.47</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
 </project>

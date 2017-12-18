@@ -20,7 +20,7 @@
     </init-param>
     <init-param>
       <param-name>loginPassword</param-name>
-      <param-value>bounter</param-value>
+      <param-value>druid</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

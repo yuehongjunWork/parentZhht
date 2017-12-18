@@ -4,18 +4,13 @@
 
 <!-- dao接口层与mybatis关联 -->
 <mapper namespace="cn.com.core.dao.TestTbDao">
-	<!--  添加测试数据  -->
 	<!-- 在mybatis-config.xml配置了别名路径，否则parameterType="cn.itcast.core.bean.TestTb" -->
-	<insert id="insertTestTb" parameterType="TestTb">
+	<!--  添加测试数据  -->
+	<insert id="addTestTb" parameterType="TestTb">
 		insert into test_tb
-		(name,password)
+		(name,birthday)
 		values
-		(#{name},#{password})
+		(#{name},#{birthday})
 	</insert>
-	<insert id="insertTestTb2" parameterType="TestTb">
-		insert into test_tb
-		(name,password)
-		values
-		(#{name},#{password})
-	</insert>
+	
 </mapper>

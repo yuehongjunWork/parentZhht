@@ -13,9 +13,6 @@
         <dependent-module archiveName="zhht-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zhht-common/zhht-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="pagehelper-3.6.4.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Mybatis-PageHelper-3.6.4/Mybatis-PageHelper-3.6.4">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="zhht-login"/>
         <property name="java-output-path" value="/zhht-login/target/classes"/>
     </wb-module>

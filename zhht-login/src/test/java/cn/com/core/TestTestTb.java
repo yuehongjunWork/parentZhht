@@ -1,5 +1,6 @@
 package cn.com.core;
 import java.util.ArrayList;
+import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
 
 
 import cn.com.core.bean.TestTb;
@@ -38,8 +40,8 @@ public class TestTestTb {
 				.getBean("testTbService");*/
 		TestTb testTb = new TestTb();
 		testTb.setName("test");
-		testTb.setPassword("123456");
-		testTbService.insertTestTb(testTb);
+		testTb.setBirthday(new Date());
+		testTbService.addTestTb(testTb);
 	}
 	
 }
