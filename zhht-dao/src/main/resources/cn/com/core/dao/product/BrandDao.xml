@@ -15,7 +15,8 @@
 		from bbs_brand
 		<where>
 			<if test="name != null">
-				name like "%"#{name}"%"
+				<!-- name like "%"#{name}"%" -->
+				name like CONCAT('%', #{name}, '%')
 			</if>
 			<if test="isDisplay != null">
 				and is_display = #{isDisplay}
@@ -31,7 +32,8 @@
 		from bbs_brand
 		<where>
 			<if test="name != null">
-				name like "%"#{name}"%"
+				<!-- name like "%"#{name}"%" -->
+				name like CONCAT('%', #{name}, '%')  
 			</if>
 			<if test="isDisplay != null">
 				and is_display = #{isDisplay}

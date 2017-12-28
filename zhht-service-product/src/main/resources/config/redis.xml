@@ -21,10 +21,10 @@
 		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 		
 	<!-- Jedis的客户端-->
-	<!-- <bean id="jedis" class="redis.clients.jedis.Jedis">
-		<constructor-arg value="192.168.200.128" index="0" type="java.lang.String"/>
+	<bean id="jedis" class="redis.clients.jedis.Jedis">
+		<constructor-arg value="192.168.189.135" index="0" type="java.lang.String"/>
 		<constructor-arg value="6379" index="1"/>
-	</bean> -->
+	</bean>
 			
 		
 </beans>

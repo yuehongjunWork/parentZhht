@@ -7,4 +7,19 @@
   </parent>
   <artifactId>zhht-service-sorl</artifactId>
   <packaging>war</packaging>
+  
+    <!-- Dao 接口  实现类 -->
+  <dependencies>
+  	<dependency>
+	  	<groupId>cn.com.zhht</groupId>
+	    <artifactId>zhht-dao</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	  	  <!-- Service 接口 -->
+  	<dependency>
+	  	<groupId>cn.com.zhht</groupId>
+	    <artifactId>zhht-interface</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

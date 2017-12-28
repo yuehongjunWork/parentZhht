@@ -30,15 +30,16 @@
 	<!-- <dubbo:registry address="N/A" /> -->
 	
 	<!-- 设置端口号 默认20880 -->
-	<dubbo:protocol port="20880" name="dubbo" />
+	<dubbo:protocol port="20883" name="dubbo"/>
 	
 	<!-- 配置监控中心 -->
 	<!-- <dubbo:monitor protocol="registry"> -->
 
 	<!-- 暴露的接口 -->
 	<dubbo:service interface="cn.com.core.service.TestTbService" ref="testTbService"/>
-	<!-- <context:component-scan base-package="cn.com.core.service"/> -->	
-	<!-- 使用注解方式暴露接口 -->     
-    <!-- <dubbo:annotation package="cn.com.core.service" /> -->
+	
+	<!-- 暴露的接口 -->
+	<dubbo:service interface="cn.com.core.service.user.BuyerService" ref="buyerService"/>
+	<dubbo:service interface="cn.com.core.service.user.SessionProvider" ref="sessionProvider"/>
 
 </beans>

@@ -35,21 +35,18 @@
 		check="false" url="dubbo://127.0.0.1:20880"
 	/>
 	
-	<!-- <dubbo:reference interface="cn.itcast.core.service.product.BrandService" id="brandService"
+	<dubbo:reference interface="cn.com.core.service.product.ProductService" id="productService"
 		check="false" url="dubbo://127.0.0.1:20880"
 	/>
-	<dubbo:reference interface="cn.itcast.core.service.product.UploadService" id="uploadService"
+	<dubbo:reference interface="cn.com.core.service.product.SkuService" id="skuService"
 		check="false" url="dubbo://127.0.0.1:20880"
 	/>
-	<dubbo:reference interface="cn.itcast.core.service.product.ProductService" id="productService"
+	<dubbo:reference interface="cn.com.core.service.product.UploadService" id="uploadService"
 		check="false" url="dubbo://127.0.0.1:20880"
 	/>
-	<dubbo:reference interface="cn.itcast.core.service.product.ColorService" id="colorService"
+	<dubbo:reference interface="cn.com.core.service.product.ColorService" id="colorService"
 		check="false" url="dubbo://127.0.0.1:20880"
 	/>
-	<dubbo:reference interface="cn.itcast.core.service.product.SkuService" id="skuService"
-		check="false" url="dubbo://127.0.0.1:20880"
-	/> -->
 	
 	<!-- 全局统一设置  超时时间  默认1秒-->
 	<dubbo:consumer timeout="600000"/>

@@ -46,7 +46,7 @@
 	<!-- Mapper 配置如果Mapper与接口在同一包下,下面内容可不配置-->
 	<!-- 
 	<mappers>
-		<package name="cn.itcast.core.dao"/>
+		<package name="cn.com.core.dao"/>
 	</mappers>
 	 -->
 </configuration>

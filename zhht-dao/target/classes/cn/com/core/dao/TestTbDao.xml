@@ -4,7 +4,7 @@
 
 <!-- dao接口层与mybatis关联 -->
 <mapper namespace="cn.com.core.dao.TestTbDao">
-	<!-- 在mybatis-config.xml配置了别名路径，否则parameterType="cn.itcast.core.bean.TestTb" -->
+	<!-- 在mybatis-config.xml配置了别名路径，否则parameterType="cn.com.core.bean.TestTb" -->
 	<!--  添加测试数据  -->
 	<insert id="addTestTb" parameterType="TestTb">
 		insert into test_tb

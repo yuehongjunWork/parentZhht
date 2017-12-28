@@ -1,10 +1,19 @@
 package cn.com.core;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Date;
 
+
+
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import cn.com.common.fdfs.FastDFSUtils;
 import cn.com.core.bean.TestTb;
 import cn.com.core.service.TestTbService;
 
@@ -22,9 +31,11 @@ public class TestTestTb extends SpringJunitTest {
 	@Test
 	public void testAdd() throws Exception {
 		TestTb testTb = new TestTb();
-		testTb.setName("成功入库2334");
+		testTb.setName("成功入库886");
 	    testTb.setBirthday(new Date());
 	    testTbService.addTestTb(testTb);
 	}
+	
+	
 }
 

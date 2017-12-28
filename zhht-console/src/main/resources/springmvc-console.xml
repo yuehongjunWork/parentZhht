@@ -31,8 +31,12 @@
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	
-	<!-- 上传图片 -->
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+	<!-- 上传图片 bean的名字必须为：multipartResolver-->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8"></property>
+    	<property name="maxUploadSize" value="10485760000"></property>
+   		<property name="maxInMemorySize" value="40960"></property>
+	</bean>
 	
 	<import resource="dubbo-consumer.xml"/>
 		
